@@ -5,18 +5,37 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>20260328 작업</title>
    <link rel="stylesheet" href="./all.min.css">
+   <link rel="stylesheet" href="./reset.css">
 </head>
 
 <style>
    /* 헤더탑 */
-   .hdr-top-wrap {}
-   .hdr-top-wrap>.hdr-top {}
-   .hdr-top-wrap>.hdr-top>i {}
+   .hdr-top-wrap {
+         /* CSS 속성 */
+         /* 속성명: 속성값; */
+         /* 가로: width, 세로: height */
+         /* line-height: 행간 */
+   }
+   .hdr-top-wrap>.hdr-top {
+      /* 공식: 그리드(컨텐츠 내용) 사이즈 */
+      /* 속성명: 속성값; */
+      width: 80%;
+      max-width: 1080px;
+      /* max-width 1080px 이상을 벗어나지 않게 설정*/
+   }
+   .hdr-top-wrap>.hdr-top>i {
+      line-height: 40px;
+   }
 
 
    /* 헤더 */
    .hdr-wrap {}
-   .hdr-wrap>header {}
+   .hdr-wrap>header {
+      width: 80%;
+      max-width: 1080px;
+      margin: 0 auto;   
+      line-height: 80px;   
+   }
    .hdr-wrap>header>h1 {}
    .hdr-wrap>header>ul {}
    .hdr-wrap>header>ul>li {}
@@ -24,9 +43,15 @@
 
    /* 컨텐츠 공통 */
    .content-wrap {}
-   .content-wrap>.content {}
+   .content-wrap>.content {
+      width: 80%;
+      max-width: 1080px;
+      margin: 0 auto;
+   }
    .content-wrap>.content>header {}
-   .content-wrap>.content>header>h2 {}
+   .content-wrap>.content>header>h2 {
+      line-height: 80px;
+   }
    .content-wrap>.content>header>h4 {}
    .content-wrap>.content>section {}
    .content-wrap>.content>section>article {}
@@ -96,7 +121,11 @@
 
    /* 푸터 */
    .ftr-wrap {}
-   .ftr-wrap>footer {}
+   .ftr-wrap>footer {
+      width: 80%;
+      max-width: 1080px;
+      margin: 0 auto;
+   }
    .ftr-wrap>footer>h4 {}
    .ftr-wrap>footer>address {}
    .ftr-wrap>footer>.icons {}
