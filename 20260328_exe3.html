@@ -183,9 +183,16 @@
             background-color: #f00;
             padding-top: 80px;
             padding-bottom: 300px;
+            background-image: url('./image/content2_bg.png');
+            background-size: 33.33% 100%;
+            background-repeat: repeat-x;
+
         }
-        .content-wrap.content2>.content.cnt2>header>h2{}
+        .content-wrap.content2>.content.cnt2>header>h2{
+            color: #fff;
+        }
         .content-wrap.content2>.content.cnt2>header>h4{
+            color: #fff;
             width: calc(80% / 12 * 6);
             max-width: 520px;
         }
@@ -204,6 +211,11 @@
             width: 50%;
             background-image: url('./image/content2_image1.png');
         }
+        .content-wrap.content2>.content.cnt2>section>article>.image>video{
+            height: 100%;
+             object-fit: cover;
+        }
+        
         .content-wrap.content2>.content.cnt2>section>article>.texts{
             width: 50%;
             background-color: #fff;
@@ -227,6 +239,16 @@
             color: #fff;
             border-radius: 20px;
         }
+        .content-wrap.content2>.content.cnt2>section>article>.texts>button:hover{
+            line-height: 40px;
+            width: calc(100% / 6 * 4);
+            background-color: #a31f30;
+            margin-top: 20px;
+            color: #000;
+            border-radius: 20px;
+            transition: margin-top 0.5s;
+
+        }
 
         /* 콘텐츠3 */
         .content-wrap.content3{}
@@ -243,6 +265,10 @@
             height: 200px;
             overflow: hidden;
         }
+        .content-wrap.content3>.content.cnt3>section>article:hover>.texts{
+            margin-top: -200px;            
+        }
+
         .content-wrap.content3>.content.cnt3>section>article>.image{
             height: 200px;
         }
@@ -255,7 +281,11 @@
         .content-wrap.content3>.content.cnt3>section>article:nth-of-type(4)>.image{
             background-image: url('./image/content3_image4.png');}
 
-        .content-wrap.content3>.content.cnt3>section>article>.texts{}
+        .content-wrap.content3>.content.cnt3>section>article>.texts{
+            color: #fff;
+            background-color: rgba(51, 51, 51, 0.4);
+            transition: margin-top 0.5s;
+        }
         .content-wrap.content3>.content.cnt3>section>article>.texts>h3{}
         .content-wrap.content3>.content.cnt3>section>article>.texts>p{}
 
@@ -328,7 +358,7 @@
                     <article>
                         <div class="image">이미지</div>
                         <div class="texts">
-                            <h3>segmentTitle</h3>
+                            <h3>segment Title</h3>
                             <h4>Lorem ipsum dolor sit amet.</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nam excepturi obcaecati
                                 saepe cum nulla veritatis, tenetur aliquid nisi hic magnam. Vero repellendus veritatis
@@ -371,7 +401,7 @@
                     <article>
                         <div class="image">이미지</div>
                         <div class="texts">
-                            <h3>segmentTitle</h3>
+                            <h3>segment Title</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nam excepturi obcaecati
                                 saepe cum nulla veritatis, tenetur aliquid nisi hic magnam. Vero repellendus veritatis
                                 fuga quas et fugit nulla pariatur.</p>
@@ -384,7 +414,7 @@
                     <article>
                         <div class="image">이미지</div>
                         <div class="texts">
-                            <h3>segmentTitle</h3>
+                            <h3>segment Title</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nam excepturi obcaecati
                                 saepe cum nulla veritatis, tenetur aliquid nisi hic magnam. Vero repellendus veritatis
                                 fuga quas et fugit nulla pariatur.</p>
@@ -407,7 +437,9 @@
             </header>
             <section>
                 <article>
-                    <div class="image">이미지</div>
+                    <div class="image">
+                        <video src="./image/content2_mov1.mp4" autoplay muted loop></video>
+                    </div>
                     <div class="texts">
                         <h3>segmentTitle</h3>
                         <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, maxime.</h4>
@@ -437,7 +469,7 @@
                 <article>
                     <div class="image">이미지</div>
                     <div class="texts">
-                        <h3>segmentTitle</h3>
+                        <h3>segment Title</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sequi obcaecati adipisci
                             voluptas. Explicabo, dolores culpa vero eius tempora enim qui, quibusdam temporibus adipisci
                             laborum, amet ipsa impedit minus cumque?</p>
@@ -446,7 +478,7 @@
                 <article>
                     <div class="image">이미지</div>
                     <div class="texts">
-                        <h3>segmentTitle</h3>
+                        <h3>segment Title</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sequi obcaecati adipisci
                             voluptas. Explicabo, dolores culpa vero eius tempora enim qui, quibusdam temporibus adipisci
                             laborum, amet ipsa impedit minus cumque?</p>
@@ -455,7 +487,7 @@
                 <article>
                     <div class="image">이미지</div>
                     <div class="texts">
-                        <h3>segmentTitle</h3>
+                        <h3>segment Title</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sequi obcaecati adipisci
                             voluptas. Explicabo, dolores culpa vero eius tempora enim qui, quibusdam temporibus adipisci
                             laborum, amet ipsa impedit minus cumque?</p>
@@ -464,7 +496,7 @@
                 <article>
                     <div class="image">이미지</div>
                     <div class="texts">
-                        <h3>segmentTitle</h3>
+                        <h3>segment Title</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sequi obcaecati adipisci
                             voluptas. Explicabo, dolores culpa vero eius tempora enim qui, quibusdam temporibus adipisci
                             laborum, amet ipsa impedit minus cumque?</p>
