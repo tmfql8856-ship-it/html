@@ -9,6 +9,214 @@
     <link rel="stylesheet" href="./reset.css">
 </head>
 
+<style>
+    /* 헤더탑 */
+    .hdr-top-wrap {}
+
+    .hdr-top-wrap>.hdr-top {
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    .hdr-top-wrap>.hdr-top>i {}
+
+
+    /* 헤더 */
+    .hdr-wrap {}
+
+    .hdr-wrap>header {
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .hdr-wrap>header>h1 {}
+
+    .hdr-wrap>header>ul {
+        display: flex;
+    }
+
+    .hdr-wrap>header>ul>li {}
+
+
+    /* 공통 컨텐츠 */
+    .cnt-wrap {}
+
+    .cnt-wrap>.content {
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+    .cnt-wrap>.content>header {}
+
+    .cnt-wrap>.content>header>h2 {}
+
+    .cnt-wrap>.content>header>h4 {}
+
+    .cnt-wrap>.content>section {
+        margin-top: 40px;
+    }
+
+    .cnt-wrap>.content>section>article {}
+
+
+    .cnt-wrap>.content>section>article>.image {}
+
+    .cnt-wrap>.content>section>article>.texts {}
+
+    .cnt-wrap>.content>section>article>.texts>h3 {}
+
+    .cnt-wrap>.content>section>article>.texts>h4 {}
+
+    .cnt-wrap>.content>section>article>.texts>p {}
+
+    .cnt-wrap>.content>section .icons {}
+
+    .cnt-wrap>.content>section .icons>i {}
+
+
+
+    /* 컨텐츠1 */
+    .cnt-wrap1 {}
+
+    .cnt-wrap1>.cnt1 { }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>header {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>header>h2 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>header>h4 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top {
+        display: flex;
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h3 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h4 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>p {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>.icons {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>.icons>i {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>h3 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>p {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>.icons {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>.icons>i {}
+
+
+    /* 컨텐츠2 */
+    .cnt-wrap2 {}
+
+    .cnt-wrap2>.cnt2 {}
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>header {
+        padding-top: 80px;
+        padding-bottom: 360px;
+        background-color: #f00;
+    }
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>header>h2 {}
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>header>h4 {}
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section {
+        margin-top: -320px;
+    }
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article {
+        display: flex;
+    }
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.image {}
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts {}
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>h3 {}
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>h4 {}
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>p {}
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>button {}
+
+
+    /* 컨텐츠3 */
+    .cnt-wrap.cnt-wrap3 {}
+
+    .cnt-wrap.cnt-wrap3>content.cnt3 {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>header {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>header>h2 {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>header>h4 {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section {
+        display: flex;
+    }
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts>h3 {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts>p {}
+
+
+    /* 푸터 */
+    .ftr-warp {}
+
+    .ftr-warp>footer {
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        margin-top: 80px;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        background-color: #a31f30;
+    }
+
+    .ftr-warp>footer>h4 {}
+
+    .ftr-warp>footer>address {}
+
+    .ftr-warp>footer>.icons {}
+
+    .ftr-warp>footer>.icons>i {}
+</style>
+
 <body>
     <!-- 헤더탑 -->
     <div class="hdr-top-wrap">
@@ -50,8 +258,8 @@
                                 delectus eos itaque? Architecto rerum consectetur quia ipsum, dolorem nobis quod
                                 expedita nihil! Beatae illo cumque labore quas ut.</p>
                             <div class="icons">
-                                <i></i>
-                                <i></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
                             </div </div> </article> <article>
                             <div class="image i2">이미지</div>
                             <div class="texts">
@@ -61,8 +269,8 @@
                                     delectus eos itaque? Architecto rerum consectetur quia ipsum, dolorem nobis quod
                                     expedita nihil! Beatae illo cumque labore quas ut.</p>
                                 <div class="icons">
-                                    <i></i>
-                                    <i></i>
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
                                 </div>
                             </div>
                     </article>
@@ -76,8 +284,8 @@
                                 delectus eos itaque? Architecto rerum consectetur quia ipsum, dolorem nobis quod
                                 expedita nihil! Beatae illo cumque labore quas ut.</p>
                             <div class="icons">
-                                <i></i>
-                                <i></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
                             </div>
                         </div>
                     </article>
@@ -89,8 +297,8 @@
                                 delectus eos itaque? Architecto rerum consectetur quia ipsum, dolorem nobis quod
                                 expedita nihil! Beatae illo cumque labore quas ut.</p>
                             <div class="icons">
-                                <i></i>
-                                <i></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
                             </div>
                         </div>
                     </article>
@@ -102,8 +310,8 @@
                                 delectus eos itaque? Architecto rerum consectetur quia ipsum, dolorem nobis quod
                                 expedita nihil! Beatae illo cumque labore quas ut.</p>
                             <div class="icons">
-                                <i></i>
-                                <i></i>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
                             </div>
                         </div>
                     </article>
