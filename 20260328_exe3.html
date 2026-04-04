@@ -90,6 +90,10 @@
             height: 320px;
             background-color: #ccc;
             color: transparent;
+            /* 백그라운드 이미지 세트 */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
         .content-wrap>.content>section article>.texts{
             padding: 40px 20px;
@@ -125,6 +129,13 @@
             width: calc(50% - 10px);
         }
         .content-wrap.content1>.content.cnt1>section>.art-top>article>.image{}
+        .content-wrap.content1>.content.cnt1>section>.art-top>article:nth-of-type(1)>.image{
+            background-image: url('./image/content1_image1.png');
+        }
+        .content-wrap.content1>.content.cnt1>section>.art-top>article:nth-of-type(2)>.image{
+            background-image: url('./image/content1_image2.png');
+        }
+
         .content-wrap.content1>.content.cnt1>section>.art-top>article>.texts{
             padding-left: calc(100% / 6 * 0.6);
             padding-right: calc(100% / 6 * 2);
@@ -145,7 +156,13 @@
         .content-wrap.content1>.content.cnt1>section>.art-btm>article{
             width: calc(100% / 3 - 10px);
         }
-        .content-wrap.content1>.content.cnt1>section>.art-btm>article>.image{}
+        .content-wrap.content1>.content.cnt1>section>.art-btm>article:nth-of-type(1)>.image{
+            background-image: url('./image/content1_image3.png');}
+        .content-wrap.content1>.content.cnt1>section>.art-btm>article:nth-of-type(2)>.image{
+            background-image: url('./image/content1_image4.png');}
+        .content-wrap.content1>.content.cnt1>section>.art-btm>article:nth-of-type(3)>.image{
+            background-image: url('./image/content1_image5.png');}
+
         .content-wrap.content1>.content.cnt1>section>.art-btm>article>.texts{
            border: 1px solid #d9d9d9;
         }
@@ -185,6 +202,7 @@
         .content-wrap.content2>.content.cnt2>section>article>.image{
             height: 440px;
             width: 50%;
+            background-image: url('./image/content2_image1.png');
         }
         .content-wrap.content2>.content.cnt2>section>article>.texts{
             width: 50%;
@@ -228,6 +246,15 @@
         .content-wrap.content3>.content.cnt3>section>article>.image{
             height: 200px;
         }
+        .content-wrap.content3>.content.cnt3>section>article:nth-of-type(1)>.image{
+            background-image: url('./image/content3_image1.png');}
+        .content-wrap.content3>.content.cnt3>section>article:nth-of-type(2)>.image{
+            background-image: url('./image/content3_image2.png');}
+        .content-wrap.content3>.content.cnt3>section>article:nth-of-type(3)>.image{
+            background-image: url('./image/content3_image3.png');}
+        .content-wrap.content3>.content.cnt3>section>article:nth-of-type(4)>.image{
+            background-image: url('./image/content3_image4.png');}
+
         .content-wrap.content3>.content.cnt3>section>article>.texts{}
         .content-wrap.content3>.content.cnt3>section>article>.texts>h3{}
         .content-wrap.content3>.content.cnt3>section>article>.texts>p{}
