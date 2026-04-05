@@ -11,31 +11,46 @@
 
 <style>
     /* 헤더탑 */
-    .hdr-top-wrap {}
+    .hdr-top-wrap {
+        background-color: #212517;
+    }
 
     .hdr-top-wrap>.hdr-top {
         width: 80%;
         max-width: 1080px;
         margin: 0 auto;
+        line-height: 40px;
+        text-align: center;
     }
 
-    .hdr-top-wrap>.hdr-top>i {}
+    .hdr-top-wrap>.hdr-top>i {
+        color: #fff;
+    }
 
 
     /* 헤더 */
-    .hdr-wrap {}
+    .hdr-wrap {
+        background-color: #A31F30;
+    }
 
     .hdr-wrap>header {
         width: 80%;
         max-width: 1080px;
         margin: 0 auto;
         display: flex;
+        /*사이즈를 줄였을때 밀리지 않음*/
+        justify-content: space-between;
+        /*값을 주지않고 요소를 양쪽 끝으로 찢어놓음*/
+        line-height: 80px;
+
     }
 
     .hdr-wrap>header>h1 {}
 
     .hdr-wrap>header>ul {
         display: flex;
+        column-gap: 20px;
+        /* 요소 사이의 간격을 20px로 설정 */
     }
 
     .hdr-wrap>header>ul>li {}
@@ -51,11 +66,21 @@
         margin-top: 80px;
     }
 
-    .cnt-wrap>.content>header {}
+    .cnt-wrap>.content>header {
+        text-align: center
+    }
 
-    .cnt-wrap>.content>header>h2 {}
+    .cnt-wrap>.content>header>h2 {
+        line-height: 80px;
+    }
 
-    .cnt-wrap>.content>header>h4 {}
+    .cnt-wrap>.content>header>h4 {
+        height: 40px;
+        line-height: 20px;
+        overflow: hidden;
+        width: calc(100% / 12 * 6);
+        margin: 0 auto;
+    }
 
     .cnt-wrap>.content>section {
         margin-top: 40px;
@@ -64,26 +89,41 @@
     .cnt-wrap>.content>section>article {}
 
 
-    .cnt-wrap>.content>section>article>.image {}
+    .cnt-wrap>.content>section article>.image {
+        background-color: #ccc;
+    }
 
     .cnt-wrap>.content>section>article>.texts {}
 
-    .cnt-wrap>.content>section>article>.texts>h3 {}
+    .cnt-wrap>.content>section article>.texts>h3 {
+        line-height: 40px;
+    }
 
-    .cnt-wrap>.content>section>article>.texts>h4 {}
+    .cnt-wrap>.content>section article>.texts>h4 {
+        line-height: 40px;
+        height: 40px;
+        overflow: hidden;
+    }
 
-    .cnt-wrap>.content>section>article>.texts>p {}
+    .cnt-wrap>.content>section article>.texts>p {
+        height: 80px;
+        line-height: 20px;
+        overflow: hidden;
+    }
 
-    .cnt-wrap>.content>section .icons {}
+    .cnt-wrap>.content>section article>.texts>.icons {
+        line-height: 40px;
+    }
 
-    .cnt-wrap>.content>section .icons>i {}
+    .cnt-wrap>.content>section>article>.texts>.icons>i {}
+
 
 
 
     /* 컨텐츠1 */
     .cnt-wrap1 {}
 
-    .cnt-wrap1>.cnt1 { }
+    .cnt-wrap1>.cnt1 {}
 
     .cnt-wrap.cnt-wrap1>.content.cnt1>header {}
 
@@ -95,13 +135,27 @@
 
     .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top {
         display: flex;
+        column-gap: 20px;
+        /*이 요소는 display: flex일 때만 작동함*/
     }
 
     .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article {}
 
-    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image {}
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image {
+        height: 320px;
+    }
 
-    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts {}
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image.i1 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image.i2 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts {
+        padding-left: calc(100% / 6 * 0.6);
+        padding-right: calc(100% / 6 * 2);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
 
     .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h3 {}
 
@@ -116,13 +170,24 @@
     .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm {
         display: flex;
         margin-top: 40px;
+        column-gap: 20px;
     }
 
     .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article {}
 
-    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image {}
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image {
+        height: 320px;
+    }
 
-    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts {}
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i1 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i2 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i3 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts {
+
+    }
 
     .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>h3 {}
 
@@ -136,19 +201,28 @@
     /* 컨텐츠2 */
     .cnt-wrap2 {}
 
-    .cnt-wrap2>.cnt2 {}
+    .cnt-wrap2>.cnt2 {
+        width: 100%;
+        max-width: none;
+    }
 
     .cnt-wrap.cnt-wrap2>.content.cnt2>header {
         padding-top: 80px;
         padding-bottom: 360px;
-        background-color: #f00;
+        background-color: #A31F30;
     }
 
     .cnt-wrap.cnt-wrap2>.content.cnt2>header>h2 {}
 
-    .cnt-wrap.cnt-wrap2>.content.cnt2>header>h4 {}
+    .cnt-wrap.cnt-wrap2>.content.cnt2>header>h4 {
+        width: calc(80% / 12 * 6);
+        max-width: 520px;
+    }
 
     .cnt-wrap.cnt-wrap2>.content.cnt2>section {
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
         margin-top: -320px;
     }
 
@@ -156,17 +230,31 @@
         display: flex;
     }
 
-    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.image {}
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.image {
+        width: 50%;
+    }
 
-    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts {}
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts {
+        width: 50%;
+        text-align: center
+    }
 
     .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>h3 {}
 
     .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>h4 {}
 
-    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>p {}
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>p {
+        height: 120px;
+        margin-top: 20px;
+    }
 
-    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>button {}
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>button {
+        line-height: 40px;
+        margin-top: 20px;
+        width: calc(100% / 6 * 4);
+        background-color: #212517;
+        color: #fff;
+    }
 
 
     /* 컨텐츠3 */
@@ -182,11 +270,22 @@
 
     .cnt-wrap.cnt-wrap3>.content.cnt3>section {
         display: flex;
+        column-gap: 20px;
     }
 
     .cnt-wrap.cnt-wrap3>.content.cnt3>section>article {}
 
-    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image {}
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image {
+        height: 200px;
+    }
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i1 {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i2 {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i3 {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i4 {}
 
     .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts {}
 
@@ -196,7 +295,9 @@
 
 
     /* 푸터 */
-    .ftr-warp {}
+    .ftr-warp {
+        background-color: #A31F30;
+    }
 
     .ftr-warp>footer {
         width: 80%;
@@ -205,17 +306,29 @@
         margin-top: 80px;
         padding-top: 40px;
         padding-bottom: 80px;
-        background-color: #a31f30;
+        text-align: center
     }
 
-    .ftr-warp>footer>h4 {}
+    .ftr-warp>footer>h4 {
+        line-height: 80px;
+    }
 
-    .ftr-warp>footer>address {}
+    .ftr-warp>footer>address {
+        line-height: 20px;
+        height: 40px;
+        overflow: hidden;
+        width: calc(100% / 12 * 8);
+        margin: 0 auto;
+    }
 
-    .ftr-warp>footer>.icons {}
+    .ftr-warp>footer>.icons {
+        line-height: 80px;
+    }
 
     .ftr-warp>footer>.icons>i {}
 </style>
+
+
 
 <body>
     <!-- 헤더탑 -->
@@ -325,8 +438,9 @@
         <div class="content cnt2">
             <header>
                 <h2>content title</h2>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quam similique delectus, dolores
-                    earum nulla!</h4>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum quod, consequuntur quibusdam
+                    autem illo magni repudiandae nulla. Placeat sint tenetur ea suscipit optio quaerat quas quae qui
+                    minima incidunt.</h4>
             </header>
             <section>
                 <article>
@@ -334,8 +448,11 @@
                     <div class="texts">
                         <h3>Segment title</h3>
                         <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sapiente esse dolor
+                            necessitatibus! Officia distinctio cumque nesciunt necessitatibus maiores asperiores eius.
+                            Earum voluptates mollitia perspiciatis voluptatem voluptate animi ad expedita!</p>
                         <button>button</button>
+                    </div>
                 </article>
             </section>
         </div>
@@ -395,7 +512,9 @@
     <div class="ftr-warp">
         <footer>
             <h4>logo here</h4>
-            <address>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, cupiditate?</address>
+            <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit dolor neque aut, esse magnam
+                quas maxime nihil ratione placeat sed ab sunt veritatis, ducimus omnis aspernatur sit sapiente ullam.
+            </address>
             <div class="icons">
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-twitter"></i>
@@ -406,4 +525,4 @@
 
 </body>
 
-</html>ㅈ
+</html>
